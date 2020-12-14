@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Item" max_length="40" name="x_561220_shopping_item" type="collection">
+        <element label="Comprado" max_length="40" name="comprado" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Item" max_length="125" name="item" type="string"/>
+        <element attributes="encode_utf8=false" label="Loja" max_length="32" name="loja" reference="x_561220_shopping_loja" type="reference"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <index name="index">
+            <element name="loja"/>
+        </index>
+    </element>
+</database>
